@@ -1,0 +1,50 @@
+<!-- activity_admin_panel.xml -->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+    		android:id="@+id/tvRestaurantNameAdmin"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:textStyle="bold"
+    		android:textSize="18sp"
+    		android:padding="8dp"
+    		android:text="Restaurant: [Name Here]" />
+
+
+        <!-- A Toggle or Switch for status -->
+        <Switch
+            android:id="@+id/switchDiscountStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discount Active?" />
+
+        <EditText
+            android:id="@+id/etNormalPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Normal Price" />
+
+        <EditText
+            android:id="@+id/etDiscountPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Discount Price" />
+
+        <!-- For adding or editing menu items, you can get creative -->
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Restaurant Info" />
+
+    </LinearLayout>
+</ScrollView>
